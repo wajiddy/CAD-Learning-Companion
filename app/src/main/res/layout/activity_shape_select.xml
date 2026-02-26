@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your shape:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"/>
+
+    <!-- “Box” -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:orientation="vertical"
+        android:background="#1A1A1A">
+
+        <RadioGroup
+            android:id="@+id/rgShapes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbTriangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3D Triangle"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbSquare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3D Square"/>
+
+            <RadioButton
+                android:id="@+id/rbRectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3D Rectangle"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip: In the viewer, toggle Edit Mode to drag vertex points."
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"/>
+</LinearLayout>
