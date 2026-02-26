@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:padding="14dp"
         android:orientation="vertical"
-        android:background="#1A1A1A">
+        android:background="#2A2A2A">
 
         <RadioGroup
             android:id="@+id/rgShapes"
@@ -31,19 +31,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3D Triangle"
+                android:textColor="@android:color/white"
                 android:checked="true"/>
 
             <RadioButton
                 android:id="@+id/rbSquare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3D Square"/>
+                android:text="3D Square"
+                android:textColor="@android:color/white"/>
 
             <RadioButton
                 android:id="@+id/rbRectangle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3D Rectangle"/>
+                android:text="3D Rectangle"
+                android:textColor="@android:color/white"/>
         </RadioGroup>
 
     </LinearLayout>
